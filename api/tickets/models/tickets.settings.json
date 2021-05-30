@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tickets",
+  "info": {
+    "name": "Tickets",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "issue": {
+      "type": "string"
+    },
+    "customerName": {
+      "type": "string"
+    },
+    "customerEmail": {
+      "type": "email"
+    },
+    "customerOrg": {
+      "type": "string"
+    },
+    "customerPhone": {
+      "type": "biginteger"
+    },
+    "department": {
+      "model": "department"
+    },
+    "assignedTo": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "status": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "issue_type": {
+      "model": "issue-type"
+    }
+  }
+}
