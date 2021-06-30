@@ -537,36 +537,14 @@
           "customerPhone": {
             "type": "integer"
           },
-          "department": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "supervisor": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "assignedTo": {
             "required": [
               "id",
               "username",
-              "email"
+              "email",
+              "First_Name",
+              "Last_Name",
+              "Man_Number"
             ],
             "properties": {
               "id": {
@@ -600,6 +578,15 @@
                 "type": "string"
               },
               "user_type": {
+                "type": "string"
+              },
+              "First_Name": {
+                "type": "string"
+              },
+              "Last_Name": {
+                "type": "string"
+              },
+              "Man_Number": {
                 "type": "string"
               },
               "created_by": {
@@ -660,9 +647,6 @@
           },
           "customerPhone": {
             "type": "integer"
-          },
-          "department": {
-            "type": "string"
           },
           "assignedTo": {
             "type": "string"

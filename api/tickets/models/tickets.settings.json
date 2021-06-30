@@ -27,9 +27,6 @@
     "customerPhone": {
       "type": "biginteger"
     },
-    "department": {
-      "model": "department"
-    },
     "assignedTo": {
       "plugin": "users-permissions",
       "model": "user"

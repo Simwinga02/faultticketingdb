@@ -528,7 +528,10 @@
               "required": [
                 "id",
                 "username",
-                "email"
+                "email",
+                "First_Name",
+                "Last_Name",
+                "Man_Number"
               ],
               "properties": {
                 "id": {
@@ -562,6 +565,15 @@
                   "type": "string"
                 },
                 "user_type": {
+                  "type": "string"
+                },
+                "First_Name": {
+                  "type": "string"
+                },
+                "Last_Name": {
+                  "type": "string"
+                },
+                "Man_Number": {
                   "type": "string"
                 },
                 "created_by": {

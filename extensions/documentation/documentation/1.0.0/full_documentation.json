@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/23/2021 7:23:06 PM"
+    "x-generation-date": "06/30/2021 3:40:49 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4359,7 +4359,10 @@
             "required": [
               "id",
               "username",
-              "email"
+              "email",
+              "First_Name",
+              "Last_Name",
+              "Man_Number"
             ],
             "properties": {
               "id": {
@@ -4393,6 +4396,15 @@
                 "type": "string"
               },
               "user_type": {
+                "type": "string"
+              },
+              "First_Name": {
+                "type": "string"
+              },
+              "Last_Name": {
+                "type": "string"
+              },
+              "Man_Number": {
                 "type": "string"
               },
               "created_by": {
@@ -4486,36 +4498,14 @@
           "customerPhone": {
             "type": "integer"
           },
-          "department": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "supervisor": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "assignedTo": {
             "required": [
               "id",
               "username",
-              "email"
+              "email",
+              "First_Name",
+              "Last_Name",
+              "Man_Number"
             ],
             "properties": {
               "id": {
@@ -4549,6 +4539,15 @@
                 "type": "string"
               },
               "user_type": {
+                "type": "string"
+              },
+              "First_Name": {
+                "type": "string"
+              },
+              "Last_Name": {
+                "type": "string"
+              },
+              "Man_Number": {
                 "type": "string"
               },
               "created_by": {
@@ -4609,9 +4608,6 @@
           },
           "customerPhone": {
             "type": "integer"
-          },
-          "department": {
-            "type": "string"
           },
           "assignedTo": {
             "type": "string"
@@ -4737,7 +4733,10 @@
               "required": [
                 "id",
                 "username",
-                "email"
+                "email",
+                "First_Name",
+                "Last_Name",
+                "Man_Number"
               ],
               "properties": {
                 "id": {
@@ -4771,6 +4770,15 @@
                   "type": "string"
                 },
                 "user_type": {
+                  "type": "string"
+                },
+                "First_Name": {
+                  "type": "string"
+                },
+                "Last_Name": {
+                  "type": "string"
+                },
+                "Man_Number": {
                   "type": "string"
                 },
                 "created_by": {
@@ -4823,7 +4831,10 @@
         "required": [
           "id",
           "username",
-          "email"
+          "email",
+          "First_Name",
+          "Last_Name",
+          "Man_Number"
         ],
         "properties": {
           "id": {
@@ -4907,13 +4918,25 @@
                 "type": "string"
               }
             }
+          },
+          "First_Name": {
+            "type": "string"
+          },
+          "Last_Name": {
+            "type": "string"
+          },
+          "Man_Number": {
+            "type": "string"
           }
         }
       },
       "NewUsersPermissionsUser": {
         "required": [
           "username",
-          "email"
+          "email",
+          "First_Name",
+          "Last_Name",
+          "Man_Number"
         ],
         "properties": {
           "username": {
@@ -4950,6 +4973,15 @@
             "type": "string"
           },
           "user_type": {
+            "type": "string"
+          },
+          "First_Name": {
+            "type": "string"
+          },
+          "Last_Name": {
+            "type": "string"
+          },
+          "Man_Number": {
             "type": "string"
           },
           "created_by": {
