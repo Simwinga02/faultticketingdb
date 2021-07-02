@@ -37,8 +37,9 @@
     "description": {
       "type": "string"
     },
-    "issue_type": {
-      "model": "issue-type"
+    "customerAddress": {
+      "type": "string",
+      "required": true
     }
   }
 }

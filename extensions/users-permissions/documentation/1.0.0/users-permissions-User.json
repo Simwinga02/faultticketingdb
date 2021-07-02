@@ -1191,7 +1191,8 @@
           "email",
           "First_Name",
           "Last_Name",
-          "Man_Number"
+          "Man_Number",
+          "userType"
         ],
         "properties": {
           "id": {
@@ -1254,28 +1255,6 @@
               }
             }
           },
-          "user_type": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "role": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "First_Name": {
             "type": "string"
           },
@@ -1283,6 +1262,9 @@
             "type": "string"
           },
           "Man_Number": {
+            "type": "string"
+          },
+          "userType": {
             "type": "string"
           }
         }
@@ -1293,7 +1275,8 @@
           "email",
           "First_Name",
           "Last_Name",
-          "Man_Number"
+          "Man_Number",
+          "userType"
         ],
         "properties": {
           "username": {
@@ -1329,9 +1312,6 @@
           "role": {
             "type": "string"
           },
-          "user_type": {
-            "type": "string"
-          },
           "First_Name": {
             "type": "string"
           },
@@ -1339,6 +1319,9 @@
             "type": "string"
           },
           "Man_Number": {
+            "type": "string"
+          },
+          "userType": {
             "type": "string"
           },
           "created_by": {

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/30/2021 3:40:49 PM"
+    "x-generation-date": "07/02/2021 2:38:12 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4362,7 +4362,8 @@
               "email",
               "First_Name",
               "Last_Name",
-              "Man_Number"
+              "Man_Number",
+              "userType"
             ],
             "properties": {
               "id": {
@@ -4395,9 +4396,6 @@
               "role": {
                 "type": "string"
               },
-              "user_type": {
-                "type": "string"
-              },
               "First_Name": {
                 "type": "string"
               },
@@ -4405,6 +4403,9 @@
                 "type": "string"
               },
               "Man_Number": {
+                "type": "string"
+              },
+              "userType": {
                 "type": "string"
               },
               "created_by": {
@@ -4477,7 +4478,8 @@
       },
       "Tickets": {
         "required": [
-          "id"
+          "id",
+          "customerAddress"
         ],
         "properties": {
           "id": {
@@ -4505,7 +4507,8 @@
               "email",
               "First_Name",
               "Last_Name",
-              "Man_Number"
+              "Man_Number",
+              "userType"
             ],
             "properties": {
               "id": {
@@ -4538,9 +4541,6 @@
               "role": {
                 "type": "string"
               },
-              "user_type": {
-                "type": "string"
-              },
               "First_Name": {
                 "type": "string"
               },
@@ -4548,6 +4548,9 @@
                 "type": "string"
               },
               "Man_Number": {
+                "type": "string"
+              },
+              "userType": {
                 "type": "string"
               },
               "created_by": {
@@ -4564,27 +4567,8 @@
           "description": {
             "type": "string"
           },
-          "issue_type": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
+          "customerAddress": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -4593,6 +4577,9 @@
         }
       },
       "NewTickets": {
+        "required": [
+          "customerAddress"
+        ],
         "properties": {
           "issue": {
             "type": "string"
@@ -4618,7 +4605,7 @@
           "description": {
             "type": "string"
           },
-          "issue_type": {
+          "customerAddress": {
             "type": "string"
           },
           "published_at": {
@@ -4736,7 +4723,8 @@
                 "email",
                 "First_Name",
                 "Last_Name",
-                "Man_Number"
+                "Man_Number",
+                "userType"
               ],
               "properties": {
                 "id": {
@@ -4769,9 +4757,6 @@
                 "role": {
                   "type": "string"
                 },
-                "user_type": {
-                  "type": "string"
-                },
                 "First_Name": {
                   "type": "string"
                 },
@@ -4779,6 +4764,9 @@
                   "type": "string"
                 },
                 "Man_Number": {
+                  "type": "string"
+                },
+                "userType": {
                   "type": "string"
                 },
                 "created_by": {
@@ -4834,7 +4822,8 @@
           "email",
           "First_Name",
           "Last_Name",
-          "Man_Number"
+          "Man_Number",
+          "userType"
         ],
         "properties": {
           "id": {
@@ -4897,28 +4886,6 @@
               }
             }
           },
-          "user_type": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "role": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "First_Name": {
             "type": "string"
           },
@@ -4926,6 +4893,9 @@
             "type": "string"
           },
           "Man_Number": {
+            "type": "string"
+          },
+          "userType": {
             "type": "string"
           }
         }
@@ -4936,7 +4906,8 @@
           "email",
           "First_Name",
           "Last_Name",
-          "Man_Number"
+          "Man_Number",
+          "userType"
         ],
         "properties": {
           "username": {
@@ -4972,9 +4943,6 @@
           "role": {
             "type": "string"
           },
-          "user_type": {
-            "type": "string"
-          },
           "First_Name": {
             "type": "string"
           },
@@ -4982,6 +4950,9 @@
             "type": "string"
           },
           "Man_Number": {
+            "type": "string"
+          },
+          "userType": {
             "type": "string"
           },
           "created_by": {

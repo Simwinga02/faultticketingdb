@@ -531,7 +531,8 @@
                 "email",
                 "First_Name",
                 "Last_Name",
-                "Man_Number"
+                "Man_Number",
+                "userType"
               ],
               "properties": {
                 "id": {
@@ -564,9 +565,6 @@
                 "role": {
                   "type": "string"
                 },
-                "user_type": {
-                  "type": "string"
-                },
                 "First_Name": {
                   "type": "string"
                 },
@@ -574,6 +572,9 @@
                   "type": "string"
                 },
                 "Man_Number": {
+                  "type": "string"
+                },
+                "userType": {
                   "type": "string"
                 },
                 "created_by": {

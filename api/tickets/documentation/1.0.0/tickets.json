@@ -516,7 +516,8 @@
     "schemas": {
       "Tickets": {
         "required": [
-          "id"
+          "id",
+          "customerAddress"
         ],
         "properties": {
           "id": {
@@ -544,7 +545,8 @@
               "email",
               "First_Name",
               "Last_Name",
-              "Man_Number"
+              "Man_Number",
+              "userType"
             ],
             "properties": {
               "id": {
@@ -577,9 +579,6 @@
               "role": {
                 "type": "string"
               },
-              "user_type": {
-                "type": "string"
-              },
               "First_Name": {
                 "type": "string"
               },
@@ -587,6 +586,9 @@
                 "type": "string"
               },
               "Man_Number": {
+                "type": "string"
+              },
+              "userType": {
                 "type": "string"
               },
               "created_by": {
@@ -603,27 +605,8 @@
           "description": {
             "type": "string"
           },
-          "issue_type": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
+          "customerAddress": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -632,6 +615,9 @@
         }
       },
       "NewTickets": {
+        "required": [
+          "customerAddress"
+        ],
         "properties": {
           "issue": {
             "type": "string"
@@ -657,7 +643,7 @@
           "description": {
             "type": "string"
           },
-          "issue_type": {
+          "customerAddress": {
             "type": "string"
           },
           "published_at": {

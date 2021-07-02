@@ -59,9 +59,6 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "user_type": {
-      "model": "user-types"
-    },
     "First_Name": {
       "type": "string",
       "required": true
@@ -71,6 +68,10 @@
       "required": true
     },
     "Man_Number": {
+      "type": "string",
+      "required": true
+    },
+    "userType": {
       "type": "string",
       "required": true
     }
