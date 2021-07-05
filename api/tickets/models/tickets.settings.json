@@ -12,34 +12,28 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "issue": {
-      "type": "string"
-    },
-    "customerName": {
-      "type": "string"
-    },
-    "customerEmail": {
-      "type": "email"
-    },
-    "customerOrg": {
-      "type": "string"
-    },
-    "customerPhone": {
-      "type": "biginteger"
-    },
-    "assignedTo": {
-      "plugin": "users-permissions",
-      "model": "user"
-    },
     "status": {
       "type": "string"
     },
     "description": {
       "type": "string"
     },
-    "customerAddress": {
-      "type": "string",
-      "required": true
+    "orgId": {
+      "model": "customer",
+      "via": "tickets"
+    },
+    "Ref": {
+      "type": "string"
+    },
+    "Priority": {
+      "type": "integer"
+    },
+    "AssignedTo": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "category": {
+      "model": "category"
     }
   }
 }

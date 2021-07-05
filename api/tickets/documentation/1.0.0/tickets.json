@@ -516,36 +516,68 @@
     "schemas": {
       "Tickets": {
         "required": [
-          "id",
-          "customerAddress"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "issue": {
+          "status": {
             "type": "string"
           },
-          "customerName": {
+          "description": {
             "type": "string"
           },
-          "customerEmail": {
+          "orgId": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "orgName": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "Phone": {
+                "type": "string"
+              },
+              "Address": {
+                "type": "string"
+              },
+              "tickets": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "Ref": {
             "type": "string"
           },
-          "customerOrg": {
-            "type": "string"
-          },
-          "customerPhone": {
+          "Priority": {
             "type": "integer"
           },
-          "assignedTo": {
+          "AssignedTo": {
             "required": [
               "id",
               "username",
               "email",
               "First_Name",
               "Last_Name",
-              "Man_Number",
               "userType"
             ],
             "properties": {
@@ -585,9 +617,6 @@
               "Last_Name": {
                 "type": "string"
               },
-              "Man_Number": {
-                "type": "string"
-              },
               "userType": {
                 "type": "string"
               },
@@ -599,14 +628,30 @@
               }
             }
           },
-          "status": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "customerAddress": {
-            "type": "string"
+          "category": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -615,35 +660,26 @@
         }
       },
       "NewTickets": {
-        "required": [
-          "customerAddress"
-        ],
         "properties": {
-          "issue": {
-            "type": "string"
-          },
-          "customerName": {
-            "type": "string"
-          },
-          "customerEmail": {
-            "type": "string"
-          },
-          "customerOrg": {
-            "type": "string"
-          },
-          "customerPhone": {
-            "type": "integer"
-          },
-          "assignedTo": {
-            "type": "string"
-          },
           "status": {
             "type": "string"
           },
           "description": {
             "type": "string"
           },
-          "customerAddress": {
+          "orgId": {
+            "type": "string"
+          },
+          "Ref": {
+            "type": "string"
+          },
+          "Priority": {
+            "type": "integer"
+          },
+          "AssignedTo": {
+            "type": "string"
+          },
+          "category": {
             "type": "string"
           },
           "published_at": {

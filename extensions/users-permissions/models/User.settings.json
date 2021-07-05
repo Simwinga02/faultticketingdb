@@ -67,10 +67,6 @@
       "type": "string",
       "required": true
     },
-    "Man_Number": {
-      "type": "string",
-      "required": true
-    },
     "userType": {
       "type": "string",
       "required": true

@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "issue_types",
+  "collectionName": "categories",
   "info": {
-    "name": "IssueType"
+    "name": "Category"
   },
   "options": {
     "increments": true,
@@ -12,6 +12,9 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
+      "type": "string"
+    },
+    "description": {
       "type": "string"
     }
   }

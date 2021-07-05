@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/issue-types": {
+    "/customers": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10,10 +10,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Customer"
                   }
                 }
               }
@@ -52,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Issue-type"
+          "Customer"
         ],
         "parameters": [
           {
@@ -202,11 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Customer"
                 }
               }
             }
@@ -244,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Issue-type"
+          "Customer"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewIssue-type"
+                "$ref": "#/components/schemas/NewCustomer"
               }
             }
           }
         }
       }
     },
-    "/issue-types/count": {
+    "/customers/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -270,8 +265,8 @@
               "application/json": {
                 "schema": {
                   "properties": {
-                    "foo": {
-                      "type": "string"
+                    "count": {
+                      "type": "integer"
                     }
                   }
                 }
@@ -311,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Issue-type"
+          "Customer"
         ],
         "parameters": []
       }
     },
-    "/issue-types/{id}": {
+    "/customers/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -326,11 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Customer"
                 }
               }
             }
@@ -368,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Issue-type"
+          "Customer"
         ],
         "parameters": [
           {
@@ -392,11 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Customer"
                 }
               }
             }
@@ -434,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Issue-type"
+          "Customer"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewIssue-type"
+                "$ref": "#/components/schemas/NewCustomer"
               }
             }
           }
@@ -508,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Issue-type"
+          "Customer"
         ],
         "parameters": [
           {
@@ -527,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Issue-type": {
+      "Customer": {
         "required": [
           "id"
         ],
@@ -535,8 +522,60 @@
           "id": {
             "type": "string"
           },
-          "name": {
+          "orgName": {
             "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "Phone": {
+            "type": "string"
+          },
+          "Address": {
+            "type": "string"
+          },
+          "tickets": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "orgId": {
+                  "type": "string"
+                },
+                "Ref": {
+                  "type": "string"
+                },
+                "Priority": {
+                  "type": "integer"
+                },
+                "AssignedTo": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -544,10 +583,25 @@
           }
         }
       },
-      "NewIssue-type": {
+      "NewCustomer": {
         "properties": {
-          "name": {
+          "orgName": {
             "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "Phone": {
+            "type": "string"
+          },
+          "Address": {
+            "type": "string"
+          },
+          "tickets": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
@@ -563,5 +617,9 @@
       }
     }
   },
-  "tags": []
+  "tags": [
+    {
+      "name": "Customer"
+    }
+  ]
 }

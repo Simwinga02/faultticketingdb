@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/issue-types",
-      "handler": "issue-type.find",
+      "path": "/customers",
+      "handler": "customer.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/issue-types/count",
-      "handler": "issue-type.count",
+      "path": "/customers/count",
+      "handler": "customer.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/issue-types/:id",
-      "handler": "issue-type.findOne",
+      "path": "/customers/:id",
+      "handler": "customer.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/issue-types",
-      "handler": "issue-type.create",
+      "path": "/customers",
+      "handler": "customer.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/issue-types/:id",
-      "handler": "issue-type.update",
+      "path": "/customers/:id",
+      "handler": "customer.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/issue-types/:id",
-      "handler": "issue-type.delete",
+      "path": "/customers/:id",
+      "handler": "customer.delete",
       "config": {
         "policies": []
       }

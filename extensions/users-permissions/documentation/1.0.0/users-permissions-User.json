@@ -1191,7 +1191,6 @@
           "email",
           "First_Name",
           "Last_Name",
-          "Man_Number",
           "userType"
         ],
         "properties": {
@@ -1261,9 +1260,6 @@
           "Last_Name": {
             "type": "string"
           },
-          "Man_Number": {
-            "type": "string"
-          },
           "userType": {
             "type": "string"
           }
@@ -1275,7 +1271,6 @@
           "email",
           "First_Name",
           "Last_Name",
-          "Man_Number",
           "userType"
         ],
         "properties": {
@@ -1316,9 +1311,6 @@
             "type": "string"
           },
           "Last_Name": {
-            "type": "string"
-          },
-          "Man_Number": {
             "type": "string"
           },
           "userType": {
