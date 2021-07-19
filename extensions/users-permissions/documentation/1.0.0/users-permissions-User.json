@@ -1262,6 +1262,9 @@
           },
           "userType": {
             "type": "string"
+          },
+          "Phone": {
+            "type": "string"
           }
         }
       },
@@ -1314,6 +1317,9 @@
             "type": "string"
           },
           "userType": {
+            "type": "string"
+          },
+          "Phone": {
             "type": "string"
           },
           "created_by": {

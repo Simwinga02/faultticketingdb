@@ -573,6 +573,9 @@
                 "userType": {
                   "type": "string"
                 },
+                "Phone": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },

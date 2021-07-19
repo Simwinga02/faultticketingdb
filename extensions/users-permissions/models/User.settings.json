@@ -70,6 +70,9 @@
     "userType": {
       "type": "string",
       "required": true
+    },
+    "Phone": {
+      "type": "string"
     }
   }
 }
